@@ -1,0 +1,77 @@
+.base-type {
+    border: 2px solid #27a4b6;
+    border-radius: 8px;
+    background-color: #263338;
+}
+
+.base-type [data-key="baseTypeHeadingWrap"] {
+    background-color: #27a4b6;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #263338;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.base-type [data-key="baseTypeHeadingWrap"] span {
+    margin-right: 4px;
+}
+
+[data-key="headingIcon"] {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-weight: bold;
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    transform: rotate(90deg);
+}
+
+.base-type.contracted [data-key="headingIcon"] {
+   transform: rotate(0);
+}
+
+.base-type.contracted [data-key="baseTypeFieldsBody"] {
+    display: none;
+}
+
+.base-type [data-key="baseTypeHeadingWrap"] span:not(:first-child) {
+    font-style: italic;
+}
+
+.base-type label {
+    display: block;
+    color: #637f8a;
+    font-weight: bold;
+}
+
+.base-type textarea,
+.base-type input,
+.base-type select {
+    width: 100%;
+}
+
+.base-type textarea {
+    min-height: 90px;
+}
+
+.base-type .fill {
+    width: 100%;
+}
+
+.base-type [data-key="baseTypeFieldsBody"] {
+    padding-top:15px;
+    padding-bottom:15px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6px;
+}
+
+.base-type [data-key="baseTypeFieldsBody"] > div {
+    padding: 0 15px;
+    flex-grow: 1;
+}
