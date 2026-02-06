@@ -53,7 +53,21 @@
 .base-type input,
 .base-type select {
     width: 100%;
+    background-color: #34444a;
+    color: #fff;
+    border: solid 1px #27a4b6;
 }
+
+.base-type input,
+.base-type select {
+    height: 28px;
+    line-height: 28px;
+}
+
+.base-type input {
+    padding-left: 5px;
+    box-sizing: border-box;
+}   
 
 .base-type textarea {
     min-height: 90px;

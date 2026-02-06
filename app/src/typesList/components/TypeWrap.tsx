@@ -1,7 +1,13 @@
 import React from 'react';
 import './TypeWrap.css';
 
-const TypeWrap: React.FC = () => {
+interface TypeWrapProps {
+  readonly typeData?: object;
+}
+
+const TypeWrap: React.FC<TypeWrapProps> = ({ 
+    typeData
+}) => {
     const toggleExpanded = (e: any) => {
         e.currentTarget.parentElement.classList.toggle('contracted');
     };

@@ -1,0 +1,18 @@
+.btns-wrap {
+    text-align: right;;
+}
+
+.btn-add {
+    background-color: #00611d;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: solid 1px #fff;
+}
+
+.btn-add:hover {
+    background-color: #008000;
+}

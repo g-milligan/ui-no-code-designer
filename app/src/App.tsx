@@ -1,9 +1,9 @@
 import React from 'react';
-import TypeWrap from './baseTypes/TypeWrap';
+import TypesList from './typesList/TypesList';
 
 function App() {
   return (
-    <TypeWrap />
+    <TypesList />
   );
 }
 
