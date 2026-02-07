@@ -1,0 +1,22 @@
+.split-column {
+    display: grid;
+    grid-template-rows: 8ch auto;
+}
+
+.split-column-head {
+    padding: 8px;
+    background-color: #08272b;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #1e7c85;
+}
+
+.split-column-body {
+    overflow: auto;
+    
+
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    scrollbar-color: #27a4b6 transparent;
+    scrollbar-width: thin;
+}

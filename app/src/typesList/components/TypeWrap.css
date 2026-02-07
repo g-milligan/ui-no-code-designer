@@ -2,6 +2,7 @@
     border: 2px solid #27a4b6;
     border-radius: 8px;
     background-color: #263338;
+    margin-bottom: 10px;
 }
 
 .base-type [data-key="baseTypeHeadingWrap"] {
