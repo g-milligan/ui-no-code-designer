@@ -9,10 +9,12 @@ interface SplitColumnProps {
 const SplitColumn: React.FC<SplitColumnProps> = ({ children, title }) => {
   return (<div className="split-column">
         <div className="split-column-head">
-                {title}
+                <span>{title}</span>
         </div>
         <div className="split-column-body">
-                {children}
+                <div className="scroll-y">
+                        {children}
+                </div>
         </div>
     </div>);
 };

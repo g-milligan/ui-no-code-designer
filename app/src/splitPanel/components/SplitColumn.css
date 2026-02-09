@@ -1,20 +1,29 @@
 .split-column {
     display: grid;
-    grid-template-rows: 8ch auto;
+    grid-template-rows: 44px auto;
 }
 
 .split-column-head {
-    padding: 8px;
+    
     background-color: #08272b;
     color: white;
     font-weight: bold;
     border-bottom: 2px solid #1e7c85;
 }
 
-.split-column-body {
-    overflow: auto;
-    
+.split-column-head span {
+    padding: 0 8px;
+    line-height: 44px;
+    display: block;
+}
 
+.split-column-body {
+    max-height: calc(100vh - 44px);
+}
+
+.split-column-body .scroll-y {
+    height: 100%;
+    overflow: auto;
     overflow-y: auto; 
     overflow-x: hidden; 
     scrollbar-color: #27a4b6 transparent;
