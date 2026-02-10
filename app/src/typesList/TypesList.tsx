@@ -10,7 +10,11 @@ const TypesList: React.FC = () => {
 
   return (<div className='types-list-wrap'>
     <div className='types-list'>
-      {typeSate.state.types.map((type) => <TypeWrap key={`type-${type.key}`} typeData={type} />)}
+      {typeSate.state.types.map((type, index) => <TypeWrap 
+        key={`type-${type.key}`} 
+        index={index} 
+        typeSate={typeSate}
+        typeData={type} />)}
     </div>
     <TypesListButtons typeSate={typeSate} />
   </div>);

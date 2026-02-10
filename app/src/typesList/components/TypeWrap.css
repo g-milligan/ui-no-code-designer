@@ -7,8 +7,7 @@
 
 .base-type [data-key="baseTypeHeadingWrap"] {
     background-color: #27a4b6;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 15px;
     color: #263338;
     font-weight: bold;
     position: relative;

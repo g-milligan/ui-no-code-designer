@@ -12,7 +12,7 @@ type BaseType = {
     type: AvailableType;
     label: string;
     validate: (value: any) => string | undefined;
-    toString: (value: any) => string;
+    toCustomString: (value: any) => string;
     default: any;
     required: boolean;
 };
@@ -43,3 +43,5 @@ export type StringType = BaseType & {
     minLength?: number;
     maxLength?: number;
 };
+
+export type AnyType = ObjectType | ArrayType | EnumType | NumberType | BooleanType | StringType;
